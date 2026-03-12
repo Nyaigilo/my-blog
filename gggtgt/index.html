@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nyagilo Stanley | Cybersecurity Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== General ===== */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Roboto', sans-serif;background:#0a0f14;color:#f4f6f9;scroll-behavior:smooth;}
+a{text-decoration:none;color:inherit;}
+section{padding:80px 20px;}
+.container{max-width:1100px;margin:0 auto;}
+
+/* ===== Navigation ===== */
+nav{position:sticky;top:0;background:#112240;padding:15px;z-index:100;display:flex;justify-content:center;gap:30px;}
+nav a{color:white;font-weight:600;transition:0.3s;}
+nav a:hover{color:#64ffda;}
+
+/* ===== Hero Slideshow ===== */
+.slideshow{position:relative;height:500px;overflow:hidden;}
+.slide{position:absolute;width:100%;height:100%;opacity:0;transition:opacity 1s;}
+.slide img{width:100%;height:500px;object-fit:cover;filter:brightness(0.6);}
+.slide.active{opacity:1;}
+.hero-text{
+position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+text-align:center;color:#64ffda;font-family:'Orbitron', sans-serif;
+}
+.hero-text h1{font-size:48px;text-shadow:0 0 10px #64ffda;}
+.hero-text p{font-size:20px;opacity:0.8;}
+
+/* ===== About Me ===== */
+#about{background:#0a192f;border-radius:15px;margin-bottom:40px;}
+#about img{width:100%;max-width:400px;border-radius:15px;margin-bottom:20px;}
+#about p{margin-bottom:15px;font-size:16px;line-height:1.6;}
+#about h3{margin-top:20px;color:#64ffda;}
+
+/* ===== Skills ===== */
+.skill{margin-bottom:25px;}
+.skill-name{font-weight:bold;margin-bottom:5px;}
+.skill-bar{background:#112240;border-radius:25px;height:25px;overflow:hidden;}
+.skill-bar-fill{
+height:100%;width:0%;border-radius:25px;text-align:right;padding-right:10px;line-height:25px;
+background: linear-gradient(90deg, #64ffda, #0ff);color:#0a192f;font-weight:bold;transition:width 2s;
+}
+
+/* ===== Blog ===== */
+#blog input[type=text]{padding:12px;width:300px;border-radius:5px;border:1px solid #ccc;}
+#blog button{padding:12px 20px;background:#0a192f;color:white;border:none;border-radius:5px; cursor:pointer;transition:0.3s;}
+#blog button:hover{background:#64ffda;color:#0a192f;}
+
+/* ===== Portfolio ===== */
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.portfolio-card{
+background:#112240;padding:20px;border-radius:15px;box-shadow:0 0 15px rgba(0,255,218,0.2);transition:0.3s;position:relative;
+}
+.portfolio-card img{width:100%;border-radius:15px;margin-bottom:15px;transition:0.3s;}
+.portfolio-card h3{margin-bottom:10px;color:#64ffda;}
+.portfolio-card p{font-size:14px;opacity:0.9;}
+.portfolio-card:hover{transform:translateY(-10px);box-shadow:0 0 20px rgba(100,255,218,0.7);}
+.portfolio-card:hover img{filter:brightness(1.1);}
+
+/* ===== Contact ===== */
+.contact{text-align:center;background:#112240;border-radius:15px;padding:40px;box-shadow:0 0 15px rgba(0,255,218,0.2);}
+.contact p{margin:12px 0;}
+.social-links a{display:inline-block;margin:10px;padding:12px 20px;background: linear-gradient(90deg, #64ffda, #0ff);border-radius:25px;color:#0a192f;font-weight:bold;transition:0.3s;}
+.social-links a:hover{background:#0a192f;color:#64ffda;}
+
+/* ===== Footer ===== */
+footer{text-align:center;background:#0a192f;color:white;padding:20px;font-size:14px;}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){.hero-text h1{font-size:32px;}.hero-text p{font-size:16px;}.slideshow{height:300px;}#about img{max-width:100%;}}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Me</a>
+<a href="#skills">Skills</a>
+<a href="#blog">Blog</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero Slideshow -->
+<section id="home" class="slideshow">
+<div class="slide active"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Lake Victoria"></div>
+<div class="slide"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Cybersecurity 1"></div>
+<div class="slide"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Cybersecurity 2"></div>
+<div class="hero-text">
+<h1>Nyagilo Stanley</h1>
+<p>Cybersecurity | Ethical Hacking | Technology</p>
+</div>
+</section>
+
+<!-- About Me -->
+<section id="about">
+<div class="container">
+<h2>About Me</h2>
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Nyagilo Stanley">
+
+<p>My name is <strong>Nyagilo Stanley</strong>, and my journey into technology began in a small rural village called <strong>Kigoto</strong> in Kenya. I was born on 10th September 2003 and raised near the shores of <strong>Lake Victoria</strong>, the largest lake in Africa. Growing up in a lakeside community shaped my early life and taught me resilience, discipline, and the importance of hard work.</p>
+
+<h3>Early Life Near Lake Victoria</h3>
+<p>Life near Lake Victoria was simple and deeply connected to nature and community. Many families depended on fishing and small-scale farming. Resources were limited but community bonds were strong. Electricity, computers, and internet access were scarce. Despite this, I developed curiosity about technology whenever I saw or heard about computers. I often wondered how machines worked and how technology shaped the world beyond our village.</p>
+
+<h3>Early Education</h3>
+<p>I began my formal education at <strong>Kigoto Primary School</strong> until 2017 when I completed my KCPE. School shaped my ambitions and exposed me to new possibilities. Although access to computers was minimal, my interest in technology grew. I was fascinated by how computers could connect people, store information, and solve complex problems.</p>
+
+<h3>Secondary School Journey</h3>
+<p>In 2018, I joined <strong>Sori Boys High School</strong>. My interest in computers and technology became stronger. I became curious about how digital systems function and solve real-world problems. I successfully completed my KCSE in 2021.</p>
+
+<h3>University and Discovering Cybersecurity</h3>
+<p>After high school, I joined <strong>Masinde Muliro University of Science and Technology (MMUST)</strong> to pursue <strong>Information Technology and Information Management</strong>. I was exposed to networking, programming, databases, and information systems. One field captured my attention more than others: <strong>Cybersecurity</strong>. I actively participated in workshops, learning communities, and mentoring students in cybersecurity awareness.</p>
+
+<h3>My Passion for Cybersecurity</h3>
+<p>Cybersecurity is not just an academic field for me; it is a mission. My goal is to develop strong expertise in cybersecurity, ethical hacking, and digital defense, helping organizations stay safe and mentoring young students.</p>
+
+<h3>Looking Forward</h3>
+<p>My journey from a small village near Lake Victoria to studying technology at university taught me that determination, curiosity, and education can transform lives. I want to use my skills to contribute to the tech industry and inspire others from villages like Kigoto to pursue technology careers.</p>
+
+<h3>Conclusion</h3>
+<p>Every journey starts somewhere. Mine began near the waters of Lake Victoria in Kigoto village. Today, it continues in the world of Information Technology and Cybersecurity, where I am committed to learning, protecting digital systems, and making a positive impact through technology.</p>
+
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<div class="container">
+<h2>My Skills</h2>
+<div class="skill"><div class="skill-name">Ethical Hacking</div><div class="skill-bar"><div class="skill-bar-fill" data-width="90%">90%</div></div></div>
+<div class="skill"><div class="skill-name">Penetration Testing</div><div class="skill-bar"><div class="skill-bar-fill" data-width="85%">85%</div></div></div>
+<div class="skill"><div class="skill-name">Networking</div><div class="skill-bar"><div class="skill-bar-fill" data-width="80%">80%</div></div></div>
+<div class="skill"><div class="skill-name">Kali Linux</div><div class="skill-bar"><div class="skill-bar-fill" data-width="75%">75%</div></div></div>
+</div>
+</section>
+
+<!-- Blog -->
+<section id="blog">
+<div class="container">
+<h2>Blog</h2>
+<div class="search-box">
+<form action="/search" method="get">
+<input type="text" name="q" placeholder="Search this blog...">
+<button type="submit">Search</button>
+</form>
+</div>
+<p>Read my posts about cybersecurity, phishing, Kali Linux, and bug bounty tips.</p>
+</div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+<div class="container">
+<h2>Portfolio</h2>
+<div class="portfolio-grid">
+<div class="portfolio-card">
+<img src="https://images.unsplash.com/photo-1618401472411-3010e5ce3b47" alt="Insider Threat Detection">
+<h3>Insider Threat Detection</h3>
+<p>Developed a system to detect malicious insider activity and prevent data breaches.</p>
+</div>
+<div class="portfolio-card">
+<img src="https://images.unsplash.com/photo-1565182999561-7c7bdbf1c9db" alt="Honeypot">
+<h3>Honeypot</h3>
+<p>Built a Python-based SSH honeypot to capture and analyze unauthorized access attempts.</p>
+</div>
+<div class="portfolio-card">
+<img src="https://images.unsplash.com/photo-1581090469897-3fbcf2ee78d7" alt="Cybersecurity Training">
+<h3>Cybersecurity Training</h3>
+<p>Organized and conducted workshops for students on cybersecurity awareness and ethical hacking.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<div class="container contact">
+<h2>Contact Me</h2>
+<p><strong>Name:</strong> Nyagilo Stanley</p>
+<p><strong>Phone:</strong> 0793864501</p>
+<p><strong>Email:</strong> nyagilostanley450@gmail.com</p>
+<p>Connect with me:</p>
+<div class="social-links">
+<a href="#">X</a>
+<a href="#">Facebook</a>
+<a href="#">GitHub</a>
+<a href="#">Medium</a>
+<a href="#">TikTok</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Nyagilo Stanley | Cybersecurity Portfolio</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+// Slideshow
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+function showSlides(){
+slides[index].classList.remove("active");
+index = (index + 1) % slides.length;
+slides[index].classList.add("active");
+}
+setInterval(showSlides,4000);
+
+// Animate skills on scroll
+let skills = document.querySelectorAll(".skill-bar-fill");
+function animateSkills(){
+let triggerBottom = window.innerHeight;
+skills.forEach(skill=>{
+let skillTop = skill.getBoundingClientRect().top;
+if(skillTop < triggerBottom){ skill.style.width = skill.getAttribute("data-width"); }
+});
+}
+window.addEventListener("scroll", animateSkills);
+animateSkills();
+</script>
+
+</body>
+</html>
